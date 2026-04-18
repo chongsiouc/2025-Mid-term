@@ -1,3 +1,19 @@
+# 1. 依賴套件 (最重要！這資料夾非常肥，npm install 就能裝回來)
 node_modules/
+
+# 2. 系統產生的暫存檔 (避免 Mac 跟 Windows 檔案打架)
+.DS_Store
+Thumbs.db
+*.swp
+
+# 3. 日誌紀錄檔 (程式執行時產生的 log，不屬於程式碼)
+*.log
+npm-debug.log*
+
+# 4. 環境變數檔案 (如果你以後有存資料庫密碼或 API 金鑰，一定要寫這行)
 .env
+.env.local
+
+# 5. 編譯產生的資料夾 (如果你有用到 TypeScript 或打包工具)
 dist/
+build/
